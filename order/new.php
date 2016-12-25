@@ -19,7 +19,13 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-12">
+            <div class="visible-lg-block visible-md-block">
             <a href="/"><img src="/images/logo_ru.png" alt="Logo" width="200px"></a>
+            </div>
+
+            <div class="visible-sm-block visible-xs-block">
+                <a href="/"><img src="/images/logo_ru.png" alt="Logo" width="150px"></a>
+            </div>
 
             <nav class="navbar navbar-default">
                 <div class="navbar-header">
@@ -60,10 +66,10 @@
                 <?php require_once ('../blocks/order/main.php');?>
 
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         <?php require_once ('../blocks/order/adress_download.php');?>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         <?php require_once ('../blocks/order/adress_upload.php');?>
                     </div>
                 </div>
