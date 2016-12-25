@@ -58,6 +58,7 @@
 
             <form>
                 <?php require_once ('../blocks/order/main.php');?>
+
                 <div class="row">
                     <div class="col-lg-6">
                         <?php require_once ('../blocks/order/adress_download.php');?>
@@ -66,6 +67,8 @@
                         <?php require_once ('../blocks/order/adress_upload.php');?>
                     </div>
                 </div>
+
+                <?php require_once ('../blocks/order/transpost-movers.php');?>
 
                 <a href="/dashboard.php" type="button" class="btn btn-success btn-block">Создать</a>
             </form>

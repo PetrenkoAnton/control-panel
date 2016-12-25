@@ -6,3 +6,11 @@ body {
 nav {
     margin-top: 30px;
 }
+
+.collapse-first {
+    margin-top: 20px;
+}
+
+.well {
+    margin-bottom: 0;
+}
