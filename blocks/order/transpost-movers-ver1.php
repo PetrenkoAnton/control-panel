@@ -1,5 +1,5 @@
 <div class="panel panel-default">
-    <div class="panel-heading">Транспорт и муверы</div>
+    <div class="panel-heading">Транспорт и муверы (первая версия)</div>
     <div class="panel-body">
 
         <div class="btn-group btn-group-justified" role="group">
@@ -14,8 +14,8 @@
             </div>
         </div>
 
-        <div class="collapse collapse-first" id="movers">
-            <div class="well">
+        <div class="collapse" id="movers">
+            <div class="well well-order">
 
                 <h4>Муверы</h4>
 
@@ -55,7 +55,7 @@
         </div>
 
         <div class="collapse collapse" id="upto1-5t">
-            <div class="well">
+            <div class="well well-order">
 
                 <h4>Газель до 1.5 тонн</h4>
 
@@ -116,7 +116,7 @@
         </div>
 
         <div class="collapse collapse" id="upto5t">
-            <div class="well">
+            <div class="well well-order">
 
                 <h4>Авто до 5 тонн</h4>
 
@@ -174,6 +174,20 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="well well-order well-order-sum">
+
+            <div class="row">
+                <div class="col-lg-offset-8 col-lg-4">
+
+                    <div class="form-group">
+                        <label>Общая сумма</label>
+                        <input type="text" class="form-control" readonly>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>
