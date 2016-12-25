@@ -41,7 +41,8 @@
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Настройки <span class="caret"></span></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-haspopup="true" aria-expanded="false">Настройки <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">Изменить пароль</a></li>
                                 <li><a href="#">Выйти</a></li>
@@ -55,8 +56,19 @@
                 <h1>Создание нового заказа</h1>
             </div>
 
-            <a href="dashboard.php" type="button" class="btn btn-success btn-block">Создать</a>
+            <form>
+                <?php require_once ('../blocks/order/main.php');?>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <?php require_once ('../blocks/order/adress_download.php');?>
+                    </div>
+                    <div class="col-lg-6">
+                        <?php require_once ('../blocks/order/adress_upload.php');?>
+                    </div>
+                </div>
 
+                <a href="/dashboard.php" type="button" class="btn btn-success btn-block">Создать</a>
+            </form>
         </div>
     </div>
 </div>
