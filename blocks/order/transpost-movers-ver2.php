@@ -5,8 +5,7 @@
     ];
 ?>
 
-
-<div class="panel panel-default">
+<div class="panel panel-<?= PANEL_COLOR ?>">
     <div class="panel-heading">Транспорт и муверы (вторая версия)</div>
     <div class="panel-body">
         <table class="table table-striped ">

@@ -39,7 +39,7 @@
     ];
 ?>
 
-<div class="panel panel-default">
+<div class="panel panel-<?= PANEL_COLOR ?>">
     <div class="panel-heading">Упаковка</div>
     <div class="panel-body">
         <table class="table table-striped ">

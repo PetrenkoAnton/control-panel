@@ -1,4 +1,4 @@
-<div class="panel panel-default">
+<div class="panel panel-<?= PANEL_COLOR ?>">
     <div class="panel-heading">Примечания</div>
     <div class="panel-body">
         <div class="form-group">

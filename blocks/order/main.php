@@ -1,4 +1,4 @@
-<div class="panel panel-default">
+<div class="panel panel-<?= PANEL_COLOR ?>">
     <div class="panel-heading">Основной блок</div>
     <div class="panel-body">
 
