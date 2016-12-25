@@ -68,11 +68,19 @@
                     </div>
                 </div>
 
+                <?php require_once ('../blocks/order/more-info.php');?>
+
                 <?php require_once ('../blocks/order/transpost-movers-ver1.php');?>
 
                 <?php require_once ('../blocks/order/transpost-movers-ver2.php');?>
 
                 <?php require_once ('../blocks/order/packaging.php');?>
+
+                <?php require_once ('../blocks/order/total-cost-ver1.php');?>
+
+                <?php require_once ('../blocks/order/total-cost-ver2.php');?>
+
+                <?php require_once ('../blocks/order/description.php');?>
 
                 <a href="/dashboard.php" type="button" class="btn btn-success btn-block">Создать</a>
             </form>

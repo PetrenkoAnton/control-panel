@@ -7,7 +7,7 @@
                 <a data-toggle="collapse" href="#movers" aria-expanded="false" type="button" class="btn btn-default">Муверы</a>
             </div>
             <div class="btn-group" role="group">
-                <a data-toggle="collapse" href="#upto1-5t" aria-expanded="false" type="button" class="btn btn-default">Газель до 1.5 тонн</a>
+                <a data-toggle="collapse" href="#upto1-5t" aria-expanded="false" type="button" class="btn btn-default">Газель до 1,5 тонн</a>
             </div>
             <div class="btn-group" role="group">
                 <a data-toggle="collapse" href="#upto5t" aria-expanded="false" type="button" class="btn btn-default">Авто до 5 тонн</a>
@@ -57,7 +57,7 @@
         <div class="collapse collapse" id="upto1-5t">
             <div class="well well-order">
 
-                <h4>Газель до 1.5 тонн</h4>
+                <h4>Газель до 1,5 тонн</h4>
 
                 <div class="row">
                     <div class="col-lg-2">
