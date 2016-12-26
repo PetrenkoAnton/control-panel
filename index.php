@@ -21,7 +21,7 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-offset-3 col-lg-6">
-            <a href="<?= URL ?>"><img src="<?= URL ?>images/logo_ru.png" alt="Logo" width="200px"></a>
+            <a href="<?= URL ?>dashboard.php"><img src="<?= URL ?>images/logo_ru.png" alt="Logo" width="200px"></a>
 
             <div class="page-header">
                 <h1>Кабинет пользователя</h1>

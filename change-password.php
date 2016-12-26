@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Кабинет пользователя | Муравей</title>
+    <title>Изменить пароль | Муравей</title>
 
     <link href="<?= URL ?>css/bootstrap.min.css" rel="stylesheet">
     <link href="<?= URL ?>css/bootstrap-yeti.min.css" rel="stylesheet">
@@ -26,11 +26,24 @@
             <?php require_once ('blocks/navbar.php');?>
 
             <div class="page-header">
-                <h1>Кабинет пользователя</h1>
+                <h1>Изменить пароль</h1>
             </div>
 
-            <p><a href="<?= URL ?>order/new.php" type="button" class="btn btn-success btn-block">Создать заказ</a></p>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <label>Текущий пароль</label>
+                        <input type="password" class="form-control">
+                    </div>
 
+                    <div class="form-group">
+                        <label>Новый пароль</label>
+                        <input type="password" class="form-control">
+                    </div>
+
+                    <p><a href="<?= URL ?>dashboard.php" type="button" class="btn btn-success btn-block">Сохранить</a></p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
