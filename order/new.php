@@ -8,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Создание нового заказа | Муравей</title>
 
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/bootstrap-yeti.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
+    <link href="<?= URL ?>css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?= URL ?>css/bootstrap-yeti.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?= URL ?>css/style.css">
 
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -22,11 +22,11 @@
     <div class="row">
         <div class="col-lg-12">
             <div class="visible-lg-block visible-md-block">
-            <a href="/"><img src="/images/logo_ru.png" alt="Logo" width="200px"></a>
+            <a href="<?= URL ?>"><img src="<?= URL ?>images/logo_ru.png" alt="Logo" width="200px"></a>
             </div>
 
             <div class="visible-sm-block visible-xs-block">
-                <a href="/"><img src="/images/logo_ru.png" alt="Logo" width="150px"></a>
+                <a href="<?= URL ?>"><img src="<?= URL ?>images/logo_ru.png" alt="Logo" width="150px"></a>
             </div>
 
             <nav class="navbar navbar-default">
@@ -38,7 +38,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Кабинет пользователя</a>
+                    <a class="navbar-brand" href="<?= URL ?>">Кабинет пользователя</a>
                 </div>
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -90,13 +90,13 @@
 
                 <?php require_once ('../blocks/order/description.php');?>
 
-                <a href="/dashboard.php" type="button" class="btn btn-success btn-block">Создать</a>
+                <a href="<?= URL ?>dashboard.php" type="button" class="btn btn-success btn-block">Создать</a>
             </form>
         </div>
     </div>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="/js/bootstrap.min.js"></script>
+<script src="<?= URL ?>js/bootstrap.min.js"></script>
 </body>
 </html>

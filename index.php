@@ -1,3 +1,5 @@
+<?php require_once ('core/config.php'); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Авторизация | Муравей</title>
 
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/bootstrap-yeti.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
+    <link href="<?= URL ?>css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?= URL ?>css/bootstrap-yeti.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?= URL ?>css/style.css">
 
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -19,7 +21,7 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-offset-3 col-lg-6">
-            <a href="/"><img src="/images/logo_ru.png" alt="Logo" width="200px"></a>
+            <a href="<?= URL ?>"><img src="<?= URL ?>images/logo_ru.png" alt="Logo" width="200px"></a>
 
             <div class="page-header">
                 <h1>Кабинет пользователя</h1>
@@ -29,14 +31,14 @@
 
             <form>
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Email</label>
-                    <input type="email" class="form-control" placeholder="">
+                    <label>Email</label>
+                    <input type="email" class="form-control">
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputPassword1">Пароль</label>
-                    <input type="password" class="form-control" placeholder="">
+                    <label>Пароль</label>
+                    <input type="password" class="form-control">
                 </div>
-                <a href="/dashboard.php" type="submit" class="btn btn-success btn-block">Войти</a>
+                <a href="<?= URL ?>dashboard.php" type="submit" class="btn btn-success btn-block">Войти</a>
             </form>
 
         </div>
@@ -44,6 +46,6 @@
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="/js/bootstrap.min.js"></script>
+<script src="<?= URL ?>js/bootstrap.min.js"></script>
 </body>
 </html>
