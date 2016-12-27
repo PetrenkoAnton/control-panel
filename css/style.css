@@ -25,3 +25,18 @@ th {
 .no-margin-bottom {
     margin-bottom: 0;
 }
+
+.btn-group {
+    margin-top: 20px;
+}
+
+.tr-link:hover {
+    cursor: pointer;
+}
+
+.alert-warning {
+    background: none;
+    border: none;
+    border-left: 1px red solid;
+    color: grey;
+}

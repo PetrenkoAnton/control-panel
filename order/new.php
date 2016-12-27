@@ -1,4 +1,4 @@
-<?php require_once ('../core/config.php');?>
+<?php require_once('../core/config.php'); ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -18,48 +18,52 @@
     <![endif]-->
 </head>
 <body>
+<?php require_once('../blocks/comments.php'); ?>
+
 <div class="container">
+
     <div class="row">
+
         <div class="col-lg-12">
             <div class="visible-lg-block visible-md-block">
-            <a href="<?= URL ?>"><img src="<?= URL ?>images/logo_ru.png" alt="Logo" width="200px"></a>
+                <a href="<?= URL ?>"><img src="<?= URL ?>images/logo_ru.png" alt="Logo" width="200px"></a>
             </div>
 
             <div class="visible-sm-block visible-xs-block">
                 <a href="<?= URL ?>dashboard.php"><img src="<?= URL ?>images/logo_ru.png" alt="Logo" width="150px"></a>
             </div>
 
-            <?php require_once ('../blocks/navbar.php');?>
+            <?php require_once('../blocks/navbar.php'); ?>
 
             <div class="page-header">
                 <h1>Создание нового заказа</h1>
             </div>
 
             <form>
-                <?php require_once ('../blocks/order/main.php');?>
+                <?php require_once('../blocks/order/main.php'); ?>
 
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                        <?php require_once ('../blocks/order/adress_download.php');?>
+                        <?php require_once('../blocks/order/adress_download.php'); ?>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                        <?php require_once ('../blocks/order/adress_upload.php');?>
+                        <?php require_once('../blocks/order/adress_upload.php'); ?>
                     </div>
                 </div>
 
-                <?php require_once ('../blocks/order/more-info.php');?>
+                <?php require_once('../blocks/order/more-info.php'); ?>
 
-                <?php require_once ('../blocks/order/transpost-movers-ver1.php');?>
+                <?php require_once('../blocks/order/transpost-movers-ver1.php'); ?>
 
-                <?php require_once ('../blocks/order/transpost-movers-ver2.php');?>
+                <?php require_once('../blocks/order/transpost-movers-ver2.php'); ?>
 
-                <?php require_once ('../blocks/order/packaging.php');?>
+                <?php require_once('../blocks/order/packaging.php'); ?>
 
-                <?php require_once ('../blocks/order/total-cost-ver1.php');?>
+                <?php require_once('../blocks/order/total-cost-ver1.php'); ?>
 
-                <?php require_once ('../blocks/order/total-cost-ver2.php');?>
+                <?php require_once('../blocks/order/total-cost-ver2.php'); ?>
 
-                <?php require_once ('../blocks/order/description.php');?>
+                <?php require_once('../blocks/order/description.php'); ?>
 
                 <a href="<?= URL ?>dashboard.php" type="button" class="btn btn-success btn-block">Создать</a>
             </form>

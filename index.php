@@ -18,8 +18,11 @@
     <![endif]-->
 </head>
 <body>
+<?php require_once ('blocks/comments.php');?>
+
 <div class="container">
     <div class="row">
+
         <div class="col-lg-offset-3 col-lg-6">
             <a href="<?= URL ?>dashboard.php"><img src="<?= URL ?>images/logo_ru.png" alt="Logo" width="200px"></a>
 
