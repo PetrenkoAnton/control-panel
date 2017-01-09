@@ -71,7 +71,7 @@
             </div>
 
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="form-group">
+                <div class="form-group no-margin-bottom">
                     <label>Комментарии</label>
                     <textarea class="form-control" rows="3"></textarea>
                 </div>

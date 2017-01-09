@@ -44,3 +44,30 @@ th {
 .table {
     margin-bottom: 0;
 }
+
+.form-control {
+    height: 30px;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.input-sm {
+    font-size: 12px;
+}
+
+.btn-sm {
+    padding: 5px 10px;
+}
+
+.panel-heading {
+    font-size: 14px;
+    padding: 8px 15px;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h5 {
+    font-size: 14px;
+}
