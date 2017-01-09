@@ -40,3 +40,7 @@ th {
     border-left: 1px red solid;
     color: grey;
 }
+
+.table {
+    margin-bottom: 0;
+}

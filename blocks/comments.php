@@ -1,4 +1,4 @@
-<div class="container">
+<!--<div class="container">
     <div class="row">
         <div class="col-lg-12">
             <div class="alert alert-warning alert-dismissible" role="alert">
@@ -15,4 +15,4 @@
             </div>
         </div>
     </div>
-</div>
+</div>-->

@@ -16,7 +16,7 @@
         ],
         [
             'full_name' => 'Усачёва Лия',
-            'email' => 'l.uchaseva@microsoft.com',
+            'email' => 'l.usacheva@microsoft.com',
             'permissions' => '0',
             'create_date' => '15.01.2017',
         ],

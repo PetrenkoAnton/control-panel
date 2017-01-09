@@ -42,7 +42,7 @@
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
                 <div class="form-group">
-                    <label>Квартира/офис</label>
+                    <label>Квартира / офис</label>
                     <input type="text" class="form-control">
                 </div>
             </div>
@@ -59,12 +59,6 @@
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
                 <div class="form-group">
-                    <label>Код</label>
-                    <input type="text" class="form-control">
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                <div class="form-group">
                     <label>Лифт</label>
                     <select class="form-control">
                         <option></option>
@@ -74,6 +68,17 @@
                     </select>
                 </div>
             </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group">
+                    <label>Комментарии</label>
+                    <textarea class="form-control" rows="3"></textarea>
+                </div>
+            </div>
+
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <button class="btn btn-sm btn-info" type="button">Дублировать данные в адрес разгрузки</button>
+            </div>
+
         </div>
     </div>
 </div>

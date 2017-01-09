@@ -1,87 +1,108 @@
 <?php
-    $packagingArr = [
-        [
-            'name' => 'Коробка для маленьких речей',
-            'price' => '12,00',
-        ],
-        [
-            'name' => 'Коробка для середніх речей',
-            'price' => '18,00',
-        ],
-        [
-            'name' => 'Коробка для великих речей',
-            'price' => '35,00',
-        ],
-        [
-            'name' => 'Коробка для гардеробу',
-            'price' => '50,00',
-        ],
-        [
-            'name' => 'Картонний лист',
-            'price' => '18,00',
-        ],
-        [
-            'name' => 'Бульбашкова плівка 120см/100м',
-            'price' => '800,00',
-        ],
-        [
-            'name' => 'Стрейч-плівка',
-            'price' => '120,00',
-        ],
-        [
-            'name' => 'Пакувальний папір',
-            'price' => '1,00',
-        ],
-        [
-            'name' => 'Скотч',
-            'price' => '20,00',
-        ],
-    ];
+$packagingArr = [
+    [
+        'name' => 'Коробка для маленьких речей',
+        'unit' => 'шт.',
+    ],
+    [
+        'name' => 'Коробка для середніх речей',
+        'unit' => 'шт.',
+    ],
+    [
+        'name' => 'Коробка для великих речей',
+        'unit' => 'шт.',
+    ],
+    [
+        'name' => 'Коробка для гардеробу',
+        'unit' => 'шт.',
+    ],
+    [
+        'name' => 'Картонний лист',
+        'unit' => 'шт.',
+    ],
+    [
+        'name' => 'Бульбашкова плівка 120см/100м',
+        'unit' => 'м. п.',
+    ],
+    [
+        'name' => 'Стрейч-плівка',
+        'unit' => 'м. п.',
+    ],
+    [
+        'name' => 'Пакувальний папір',
+        'unit' => 'м. п.',
+    ],
+    [
+        'name' => 'Скотч',
+        'unit' => 'шт.',
+    ],
+];
 ?>
 
 <div class="panel panel-<?= PANEL_COLOR ?>">
     <div class="panel-heading">Упаковка</div>
     <div class="panel-body">
-        <table class="table table-striped ">
-            <thead>
-            <tr>
-                <th>Наименование</th>
-                <th width="100px">Кол-во</th>
-                <th width="100px">Цена</th>
-                <th width="150px">Сумма</th>
-            </tr>
-            </thead>
-            <tbody>
-            <?php foreach ($packagingArr as $packaging) :?>
+        <div class="visible-lg visible-md visible-sm">
+            <table class="table table-striped ">
+                <thead>
                 <tr>
-                    <td><h5><?= $packaging['name'] ?></h5></td>
-                    <td>
-                        <div class="form-group no-margin-bottom">
-                            <input type="text" class="form-control">
-                        </div>
-                    </td>
-                    <td>
-                        <div class="form-group no-margin-bottom">
-                            <input type="text" class="form-control" placeholder=<?= $packaging['price'] ?> readonly>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="form-group  no-margin-bottom">
-                            <input type="text" class="form-control" readonly>
-                        </div>
-                    </td>
+                    <th>Наименование</th>
+                    <th width="150px">Кол-во</th>
+                    <th width="150px">Еденица измерения</th>
                 </tr>
-            <?php endforeach;?>
-            <tr>
-                <td></td>
-                <td colspan="3">
-                    <div class="form-group  no-margin-bottom">
-                        <label>Общая сумма</label>
-                        <input type="text" class="form-control" readonly>
+                </thead>
+                <tbody>
+                <?php foreach ($packagingArr as $packaging) : ?>
+                    <tr>
+                        <td><h5><?= $packaging['name'] ?></h5></td>
+                        <td>
+                            <div class="form-group no-margin-bottom">
+                                <input type="text" class="form-control">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group no-margin-bottom">
+                                <input type="text" class="form-control input-sm" placeholder="<?= $packaging['unit'] ?>"
+                                       readonly>
+                            </div>
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="visible-xs">
+            <?php $i=0; foreach ($packagingArr as $packaging) : ?>
+                <?php $i++; ?>
+
+                <div class="well well-sm">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <p><?= $packaging['name'] ?></p>
                     </div>
-                </td>
-            </tr>
-            </tbody>
-        </table>
+
+                    <div class="col-xs-6">
+                        <div class="form-group no-margin-bottom">
+                            <?php if ($i==1) : ?>
+                                <label>Кол-во</label>
+                            <?php endif;?>
+                            <input type="text" class="form-control input-sm">
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6">
+                        <div class="form-group no-margin-bottom">
+                            <?php if ($i==1) : ?>
+                                <label>Ед. измерения</label>
+                            <?php endif;?>
+                            <input type="text" class="form-control input-sm" placeholder="<?= $packaging['unit'] ?>" readonly>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <?php endforeach; ?>
+        </div>
+
     </div>
 </div>
